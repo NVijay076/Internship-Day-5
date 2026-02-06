@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sunny Side Restaurant</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Sunny Side — Classic comfort food. Reservations & takeout." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Sunny Side</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="siteNav" class="site-nav">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Flavor that Feels Like Home</h1>
+        <p>Locally sourced, passionately prepared. Dine in or take out.</p>
+        <a class="btn" href="#menu">Explore Menu</a>
+      </div>
+    </section>
+
+    <section id="menu" class="container menu">
+      <h2>Our Menu</h2>
+      <div class="cards">
+        <article class="card">
+          <img class="dish-img" src="./images/breakfast_platter.png" alt="Breakfast Platter" data-fallbacks="images/breakfast_platter.png,images/breakfast.jpg,images/breakfast.webp,images/breakfast.png" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body">
+            <h3>Breakfast Platter</h3>
+            <p class="muted">Eggs, bacon, toast, and country potatoes.</p>
+            <div class="price">$12</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="dish-img" src="./images/pancakes.png" alt="Fluffy Pancakes" data-fallbacks="images/pancakes.png,images/pancakes.jpg,images/pancake.jpg,images/breakfast.png" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body">
+            <h3>Fluffy Pancakes</h3>
+            <p class="muted">Stack of buttermilk pancakes, maple syrup.</p>
+            <div class="price">$9</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="dish-img" src="./images/avocado%20toast.png" alt="Avocado Toast" data-fallbacks="images/avocado%20toast.png,images/avocado_toast.png,images/avocado_toast.jpg,images/avocado-toast.jpg,images/avocado.jpg" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body">
+            <h3>Avocado Toast</h3>
+            <p class="muted">Sourdough, smashed avocado, chili flakes.</p>
+            <div class="price">$11</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="dish-img" src="./images/burger.jpg" alt="Classic Burger" data-fallbacks="images/burger.jpg,images/burger.png,images/classic_burger.jpg" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body">
+            <h3>Classic Burger</h3>
+            <p class="muted">Grass-fed patty, cheddar, house sauce.</p>
+            <div class="price">$14</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="dish-img" src="./images/pasta.png" alt="House Pasta" data-fallbacks="images/pasta.png,images/pasta.jpg,images/penne.jpg" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body">
+            <h3>House Pasta</h3>
+            <p class="muted">Creamy garlic sauce with seasonal vegetables.</p>
+            <div class="price">$15</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="dish-img" src="./images/garden_salad.jpg" alt="Garden Salad" data-fallbacks="images/garden_salad.jpg,images/garden-salad.jpg,images/salad.jpg,images/garden_salad.png" onerror="this.onerror=null;this.src='images/placeholder.svg'">
+          <div class="card-body">
+            <h3>Garden Salad</h3>
+            <p class="muted">Seasonal greens, lemon vinaigrette.</p>
+            <div class="price">$10</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About Us</h2>
+      <p>Sunny Side is a family-run restaurant serving comfort classics with seasonal ingredients. Open daily for breakfast and lunch.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact & Reservations</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Sunny Side Restaurant</small>
+      <div class="social">Follow us on social media</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
